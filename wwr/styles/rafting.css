@@ -75,6 +75,21 @@ img {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .hero-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image img {
+    margin: 0 auto;
+  }
+}
+
 /* HISTORY Section */
 .history {
   background: white;
