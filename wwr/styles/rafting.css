@@ -158,13 +158,18 @@ img {
   font-size: 0.9rem;
 }
 
-.social-icons a {
-  color: #000;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  transition: color 0.3s;
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* aligns icons to the right */
+  gap: 1rem;
 }
 
-.social-icons a:hover {
-  color: #444;
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1); /* adds a slight zoom on hover */
 }
