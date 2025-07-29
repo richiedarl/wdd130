@@ -1,17 +1,22 @@
-/* Base styles */
+/* Global Styles */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: #f8f8f8;
+  background: #f9f9f9;
   color: #333;
 }
 
-/* Header */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* HEADER: Grid with Flex Nav */
 .header {
-  background-color: #d6c8f5;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   align-items: center;
+  background-color: #d6c8f5;
   padding: 1rem 2rem;
 }
 
@@ -19,61 +24,67 @@ body {
   width: 80px;
 }
 
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
 .nav a {
-  margin: 0 1rem;
   text-decoration: none;
-  color: #000;
-  background: #fff;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
+  background: white;
+  border-radius: 5px;
+  color: #000;
   font-weight: bold;
 }
 
 .nav a:hover {
-  background-color: #ddd;
+  background: #ccc;
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
+/* HERO SECTION */
+.hero-section {
   padding: 2rem;
-  background-color: white;
+  text-align: center;
 }
 
-.hero h1 {
-  font-family: 'Georgia', serif;
-  font-size: 2rem;
+.hero-section h2 {
   margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #004466;
 }
 
-.hero-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+.hero-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content p {
-  max-width: 500px;
-  font-size: 1rem;
+.hero-text {
+  text-align: left;
 }
 
-.hero-content img {
-  width: 120px;
+.hero-image img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin-top: 1rem;
 }
 
-/* History Section */
+/* HISTORY Section */
 .history {
-  background-color: #fff;
+  background: white;
   padding: 2rem;
   text-align: center;
 }
 
 .history h2 {
-  font-size: 1.8rem;
   font-family: 'Georgia', serif;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -81,24 +92,20 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.history-content p {
-  max-width: 300px;
-}
-
 .history-content img {
-  width: 150px;
   background-color: #5d4dae;
   padding: 1rem;
   border-radius: 8px;
+  width: 150px;
 }
 
-/* Adventure Section */
+/* ADVENTURE Section */
 .adventure {
-  background-color: #fff;
+  background: white;
   padding: 2rem;
   text-align: center;
 }
@@ -117,33 +124,32 @@ body {
 }
 
 .adventure-gallery figure {
-  width: 100px;
+  width: 120px;
   text-align: center;
-}
-
-.adventure-gallery img {
-  width: 100%;
-  border-radius: 6px;
 }
 
 .adventure-gallery figcaption {
+  margin-top: 0.5rem;
   font-size: 0.9rem;
-  margin-top: 0.5rem;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
-  background-color: #d6c8f5;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  background: #d6c8f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
 }
 
-.footer .social-icons {
-  margin-top: 0.5rem;
+.social-icons a {
+  color: #000;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
-.footer .social-icons img {
-  width: 24px;
-  margin: 0 0.5rem;
+.social-icons a:hover {
+  color: #444;
 }
