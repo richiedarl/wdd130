@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Get in touch with Whitewater Rafting Co. for questions, bookings, and adventure planning." />
-  <meta name="author" content="Darlington Okorie" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Contact Whitewater Rafting Co. for questions, reservations, or website feedback.">
+  <meta name="author" content="Darlington Okorie">
   <title>Contact Us | Whitewater Rafting Co.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/rafting.css" />
-</head>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
 <body>
-  <!-- HEADER -->
   <header class="header">
     <div class="logo">
-      <img src="images/logo.png" alt="Rafting Company Logo" />
+      <img src="images/logo.png" alt="Rafting Company Logo">
     </div>
     <nav class="nav">
       <a href="index.html">Home</a>
@@ -26,58 +28,95 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main>
     <h1>Contact Whitewater Rafting Co.</h1>
 
-    <section class="contact-intro">
-      <p>We’d love to hear from you! Whether you’re planning your first rafting adventure or have a question about one of our trips, we’re here to help.</p>
-    </section>
-
-    <!-- CONTACT INFO SECTION -->
     <section class="contact-info">
       <h2>Our Office</h2>
       <p><strong>Address:</strong> 123 River Run Rd, Rapidsville, CO 80501</p>
-      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Phone:</strong> (555) 123‑4567</p>
       <p><strong>Email:</strong> <a href="mailto:info@whitewaterco.com">info@whitewaterco.com</a></p>
-      <p><strong>Business Hours:</strong> Monday – Saturday: 8 AM – 6 PM</p>
+      <p><strong>Hours:</strong> Mon‑Sat, 8 AM–6 PM</p>
     </section>
 
-    <!-- EMBEDDED MAP -->
+    
     <section class="map-section">
       <h2>Find Us</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="Our Location"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.7648044009334!2d-95.02808592620934!3d29.4064356485204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863f7e7adfe29383%3A0x347cc97e77ad39fc!2sCinemark%20Movies%2012!5e0!3m2!1sen!2sng!4v1754314011943!5m2!1sen!2sng"
+        class="map-frame"
+        width="100%"
+        height="300"
+        allowfullscreen
+        loading="lazy"
+        title="Location of Whitewater Rafting Co.">
+      </iframe>
     </section>
 
-    <!-- CONTACT FORM SECTION -->
+    <section class="profiles">
+      <h2>Meet Our Team</h2>
+      <div class="profile-gallery">
+        <figure>
+          <img src="images/team-1.jpg" alt="Jane Doe – Lead Guide" />
+          <figcaption>Jane Chiama – Lead Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/team-2.jpg" alt="John Smith – Operations Manager" />
+          <figcaption>John Samara – Ops Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/team-3.jpg" alt="Sara Ray – Guest Liaison" />
+          <figcaption>Sara Rayson – Guest Liaison</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="contact-form">
-      <h2 class="centered">Send Us a Message</h2>
+      <h2>Send Us a Message</h2>
       <form action="#" method="post">
         <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required />
+        <input type="text" id="fullname" name="fullname" required>
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required>
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required />
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label for="inquiry-general">
+            <input type="radio" id="inquiry-general" name="inquiryType" value="general" required>
+            General Inquiry
+          </label>
+          <label for="inquiry-reservation">
+            <input type="radio" id="inquiry-reservation" name="inquiryType" value="reservation">
+            Reservation Question
+          </label>
+          <label for="inquiry-feedback">
+            <input type="radio" id="inquiry-feedback" name="inquiryType" value="feedback">
+            Website Suggestion
+          </label>
+        </fieldset>
 
-        <label for="message">Message:</label>
+        <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          Please subscribe me to the monthly newsletter
+        </label>
 
         <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2025 Whitewater Rafting Co. | Darlington Okorie</p>
     <div class="social-icons">
-      <a href="#"><img src="images/facebook.png" alt="Facebook icon linking to our page"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter icon linking to our page"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram icon linking to our page"></a>
+      <a href="#"><img src="images/facebook.png" alt="Facebook icon"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter icon"></a>
+      <a href="https://richiedarl.github.io/wdd130/wwr/images/instagram.png"><img src="images/instagram.png" alt="Instagram icon"></a>
     </div>
+    <p><a href="images/wireframe.png">View Wireframe Design</a></p>
   </footer>
 </body>
 </html>

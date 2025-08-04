@@ -158,6 +158,46 @@ main h1 {
 }
 
 /* CONTACT PAGE */
+.map-frame { border: 0; }
+
+.profiles .profile-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profiles figure img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #004466;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #003355;
+}
 
 .contact-intro, .centered{
   text-align: center;
