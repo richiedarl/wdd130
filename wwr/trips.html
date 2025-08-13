@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Explore Whitewater Rafting Co. trips—from family floats to overnight expeditions.">
+  <meta name="author" content="Darlington Okorie">
+  <title>Trips | Whitewater Rafting Co.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <!-- HEADER (shared) -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Rafting Company Logo">
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO with overlay heading -->
+    <section class="hero trips-hero">
+      <img src="images/trips-hero.jpg" alt="Rafting group surging through whitewater rapids">
+      <h1>Find Your Next Adventure</h1>
+    </section>
+
+    <!-- Intro + CTA -->
+    <section class="trips-intro">
+      <h2>Adventure Awaits</h2>
+      <p>From calm family floats to adrenaline-packed rapids, choose the experience that fits your crew.</p>
+      <p class="cta-row">
+        <a class="cta-button" href="contact.html" aria-label="Contact us to book a rafting trip">Contact Us to Book</a>
+      </p>
+    </section>
+
+    <!-- Trip cards -->
+    <section class="trips-grid" aria-label="Trip options">
+      <article class="trip-card">
+        <img src="images/rafting2.jpg" alt="Family enjoying a calm rafting float">
+        <h3>Family Float</h3>
+        <p>Perfect for beginners and kids—soak in the beauty of the river without intense rapids.</p>
+        <p><strong>Duration:</strong> 2 hours</p>
+        <p><strong>Price:</strong> $50/person</p>
+      </article>
+
+      <article class="trip-card">
+        <img src="images/rafting3.jpg" alt="Group rafting a whitewater rapid">
+        <h3>Whitewater Rush</h3>
+        <p>Experience Class III–IV rapids with our expert guides—an adrenaline rush you’ll never forget.</p>
+        <p><strong>Duration:</strong> 4 hours</p>
+        <p><strong>Price:</strong> $80/person</p>
+      </article>
+
+      <article class="trip-card">
+        <img src="images/rafting4.jpg" alt="Campfire by the river on an overnight expedition">
+        <h3>Overnight Expedition</h3>
+        <p>A 2-day trip combining thrilling rapids and peaceful riverside camping. Meals and gear included.</p>
+        <p><strong>Duration:</strong> 2 days</p>
+        <p><strong>Price:</strong> $200/person</p>
+      </article>
+    </section>
+
+    <!-- Trips summary table + CTA -->
+    <section class="trips-table-wrap">
+      <h2 class="visually-hidden">Trip Summary Table</h2>
+      <table class="trips-table">
+        <caption>All Available Trips</caption>
+        <thead>
+          <tr>
+            <th scope="col">Trip</th>
+            <th scope="col">Level</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Price</th>
+            <th scope="col">Season</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Family Float</td>
+            <td>Beginner</td>
+            <td>2 hours</td>
+            <td>$50</td>
+            <td>May–Sep</td>
+          </tr>
+          <tr>
+            <td>Whitewater Rush</td>
+            <td>Intermediate</td>
+            <td>4 hours</td>
+            <td>$80</td>
+            <td>Apr–Oct</td>
+          </tr>
+          <tr>
+            <td>Overnight Expedition</td>
+            <td>Intermediate+</td>
+            <td>2 days</td>
+            <td>$200</td>
+            <td>Jun–Sep</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="centered cta-row">
+        <a class="cta-button" href="contact.html">Questions? Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (shared) -->
+  <footer class="footer">
+    <p>&copy; 2025 Whitewater Rafting Co. | Darlington Okorie</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.png" alt="Facebook icon"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter icon"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram icon"></a>
+    </div>
+    <p><a href="images/trips-wireframe.png">View Trips Wireframe</a></p>
+  </footer>
+</body>
+</html>

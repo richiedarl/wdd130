@@ -1,4 +1,6 @@
-/* Global Styles */
+/* ================================
+   GLOBAL STYLES
+================================ */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -11,7 +13,9 @@ img {
   display: block;
 }
 
-/* HEADER: Grid with Flex Nav */
+/* ================================
+   HEADER & NAVIGATION
+================================ */
 .header {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -43,17 +47,34 @@ img {
   background: #ccc;
 }
 
-/* HERO SECTION */
+/* ================================
+   HERO SECTIONS
+================================ */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
 .hero-section {
   padding: 2rem;
   text-align: center;
-}
-
-main h1 {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #004466;
 }
 
 .hero-box {
@@ -71,8 +92,6 @@ main h1 {
 }
 
 .hero-image img {
-  width: 100%;
-  height: auto;
   border-radius: 8px;
 }
 
@@ -81,27 +100,69 @@ main h1 {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .hero-text {
-    text-align: center;
-  }
-
-  .hero-image img {
-    margin: 0 auto;
-  }
 }
 
-/* HISTORY Section */
-.history {
-  background: white;
+/* ================================
+   CALL TO ACTION BUTTON
+================================ */
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #004466;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: #003355;
+}
+
+/* ================================
+   NEWSLETTER
+================================ */
+.newsletter {
+  background: #f4f4f4;
   padding: 2rem;
   text-align: center;
 }
 
-.history h2 {
-  font-family: 'Georgia', serif;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 250px;
+}
+
+.newsletter button {
+  background-color: #008CBA;
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #005f73;
+}
+
+/* ================================
+   HISTORY SECTION
+================================ */
+.history {
+  background: white;
+  padding: 2rem;
+  text-align: center;
 }
 
 .history-content {
@@ -119,17 +180,13 @@ main h1 {
   width: 150px;
 }
 
-/* ADVENTURE Section */
+/* ================================
+   ADVENTURE GALLERY
+================================ */
 .adventure {
   background: white;
   padding: 2rem;
   text-align: center;
-}
-
-.adventure h2 {
-  font-family: 'Georgia', serif;
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
 }
 
 .adventure-gallery {
@@ -139,6 +196,11 @@ main h1 {
   flex-wrap: wrap;
 }
 
+.adventure-gallery figure {
+  width: 120px;
+  text-align: center;
+}
+
 .adventure-gallery figure img {
   width: 100%;
   height: 100px;
@@ -146,34 +208,109 @@ main h1 {
   border-radius: 6px;
 }
 
-
-.adventure-gallery figure {
-  width: 120px;
-  text-align: center;
-}
-
 .adventure-gallery figcaption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
 }
 
-/* CONTACT PAGE */
+/* ================================
+   TRIPS PAGE
+================================ */
+/* ================================
+   UTILITIES
+================================ */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+.cta-row { margin-top: 1rem; }
+
+/* ================================
+   TRIPS PAGE
+================================ */
+.trips-intro {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  padding: 2em;
+}
+
+.trip-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.trip-card:hover { transform: scale(1.02); }
+.trip-card img { width: 100%; display: block; }
+.trip-card h3 {
+  background: #004b6b;
+  color: #fff;
+  padding: 0.5em 0.75em;
+  margin: 0;
+}
+.trip-card p { padding: 0.5em 1em; }
+
+/* Trips summary table */
+.trips-table-wrap { padding: 1rem; }
+.trips-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 1rem auto 0;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.trips-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 700;
+  padding: 0.75rem 0.5rem;
+}
+.trips-table thead th {
+  background: #004466;
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem;
+  font-weight: 700;
+}
+.trips-table tbody td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.trips-table tbody tr:nth-child(even) {
+  background: #f8fbfd;
+}
+.trips-table tbody tr:hover {
+  background: #eef6fa;
+}
+
+.trips-hero{
+  margin: 70px 0;
+}
+
+/* ================================
+   CONTACT PAGE
+================================ */
 .action-shot {
   text-align: center;
   padding: 2rem 1rem;
   background-color: #f4f4f4;
 }
 
-.action-shot h2 {
-  font-family: 'Georgia', serif;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
 .action-shot img {
   max-width: 90%;
-  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
@@ -182,6 +319,7 @@ main h1 {
 .action-shot img:hover {
   transform: scale(1.03);
 }
+
 .map-frame {
   width: 100%;
   height: 300px;
@@ -190,8 +328,6 @@ main h1 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   margin: 1.5rem 0;
 }
-
-.map-frame { border: 0; }
 
 .profiles .profile-gallery {
   display: flex;
@@ -214,43 +350,6 @@ main h1 {
   flex-direction: column;
   gap: 1rem;
 }
-
-fieldset {
-  border: 1px solid #ccc;
-  padding: 1rem;
-}
-
-button[type="submit"] {
-  background-color: #004466;
-  color: white;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-button[type="submit"]:hover {
-  background-color: #003355;
-}
-
-.contact-intro, .centered{
-  text-align: center;
-  margin: 0 auto;
-
-}
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-  margin: auto;
-}
-
-.map-frame {
-  width: 100%;
-  height: 300px;
-  border: none;
-}
-
 
 .contact-form label {
   font-weight: bold;
@@ -277,14 +376,16 @@ button[type="submit"]:hover {
   background-color: #005f73;
 }
 
-.contact-info, .map-section {
+.contact-info,
+.map-section {
   padding: 1.5rem;
   max-width: 700px;
   margin: auto;
 }
 
-
-/* FOOTER */
+/* ================================
+   FOOTER
+================================ */
 .footer {
   background: #d6c8f5;
   display: flex;
@@ -296,7 +397,6 @@ button[type="submit"]:hover {
 
 .social-icons {
   display: flex;
-  justify-content: flex-end; /* aligns icons to the right */
   gap: 1rem;
 }
 
@@ -307,5 +407,5 @@ button[type="submit"]:hover {
 }
 
 .social-icons a img:hover {
-  transform: scale(1.1); /* adds a slight zoom on hover */
+  transform: scale(1.1);
 }

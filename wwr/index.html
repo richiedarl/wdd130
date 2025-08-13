@@ -1,35 +1,79 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta name="description" content="Darlington Okorie's WDD130 Home Page about web development, learning, and projects.">
-  <meta name="author" content="Darlington Okorie">
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Darlington Okorie | WDD 130</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Experience thrilling whitewater rafting adventures with Whitewater Rafting Co. Book your trip today!">
+  <title>Whitewater Rafting Co. | Home</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="wwr/">Rafting Website</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Whitewater Rafting Co. logo">
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h1>Darlington Okorie | WDD 130</h1>
-    <img src="images/profile.jpg" alt="Hello, my name is Darlington Okorie" width="200">
-    <p>Hello! My name is Darlington Okorie and I am from Nigeria. I enjoy learning web development and solving interesting problems.</p>
-  </main>
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-box">
+      <div class="hero-text">
+        <h1>Adventure Awaits</h1>
+        <p>Join us for unforgettable whitewater rafting experiences! Whether you’re a beginner or an expert, we have the perfect trip for you.</p>
+        <a href="trips.html" class="cta-button">Book Your Trip</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="People rafting in whitewater rapids">
+      </div>
+    </div>
+  </section>
 
-  <aside>
-    <h2>Nigeria</h2>
-    <img src="images/nigeria.jpg" alt="Scenic view of Nigeria">
-    <p>Nigeria is a vibrant country in West Africa, known for its cultural diversity, rich history, and tech innovation. It is the most populous nation in Africa and full of creative energy.</p>
-  </aside>
+  <!-- NEWSLETTER SIGNUP -->
+  <section class="newsletter">
+    <h2>Stay Updated!</h2>
+    <p>Subscribe to our newsletter for trip updates, tips, and exclusive deals.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
-  <footer>
-    <p>&copy;2025 Darlington Okorie | Nigeria</p>
+  <!-- ADVENTURE TEASER -->
+  <section class="adventure">
+    <h2>Our Top Adventures</h2>
+    <div class="adventure-gallery">
+      <figure>
+        <img src="images/rafting1.jpg" alt="Rafting through rocky canyon">
+        <figcaption>Canyon Rapids</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rafting2.jpg" alt="Rafting on calm scenic river">
+        <figcaption>Scenic River Run</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rafting3.jpg" alt="Extreme whitewater action">
+        <figcaption>Extreme Rapids</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Whitewater Rafting Co. | Darlington Okorie</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.png" alt="Facebook icon linking to our page"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter icon linking to our page"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram icon linking to our page"></a>
+    </div>
   </footer>
+
 </body>
 </html>
